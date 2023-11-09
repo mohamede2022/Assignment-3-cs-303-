@@ -1,4 +1,4 @@
-# Assignment-3-cs-303-
+# Assignment-3-CS-303-
 **Instruction Code:**
 
 - Includes necessary header file(s).
