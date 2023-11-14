@@ -1,5 +1,5 @@
 # Assignment-3-CS-303
-**Instruction Code:**
+**Instruction on how the code functions:**
 
 - Includes necessary header file(s).
 - Defines the main function.
