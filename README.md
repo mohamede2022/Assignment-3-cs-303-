@@ -6,7 +6,6 @@
 - Asks the user to input an infix expression and stores it in the infixExp variable.
 - Checks if the entered infix expression is balanced using the isBalanced function. If unbalanced, an error message is displayed.
 - If the expression is balanced, converts the infix expression to a postfix expression using the infixToPostfix function and displays the result.
-- It appears that the queue-related code provided after the return 0 statement won't be executed because of the early return in the code.
 - Elements are inserted into the queue using the enqueue method of the myQueue object, which is an instance of the CustomQueue class.
 - The program displays the front element of the queue using the front method of the myQueue object.
 - The program dequeues (removes) the front element from the queue using the dequeue method of the myQueue object. The dequeued element is then displayed.
