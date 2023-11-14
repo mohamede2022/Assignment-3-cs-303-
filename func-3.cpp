@@ -28,22 +28,26 @@ string infixToPostfix(string exp) {
 		char ch = exp[i];
 		if (isalpha(ch)) {
 			postfixExp += ch;
-		} else if (isOperator(ch)) {
+		} 
+		else if (isOperator(ch)) {
 			while (!st.empty() && st.top() != '(' && precedence(ch) <= precedence(st.top())) {
 				postfixExp += st.top();
 				st.pop();
 			}
 			st.push(ch);
-		} else if (ch == '(') {
+		} 
+		else if (ch == '(') {
 			st.push(ch);
-		} else if (ch == ')') {
+		} 
+		else if (ch == ')') {
 			while (!st.empty() && st.top() != '(') {
 				postfixExp += st.top();
 				st.pop();
 			}
 			if (!st.empty() && st.top() == '(') {
 				st.pop();
-			} else {
+			} 
+			else {
 				return "Invalid Expression";
 			}
 		}
@@ -65,13 +69,15 @@ bool isBalanced(string exp) {
 		char ch = exp[i];
 		if (ch == '{' || ch == '[' || ch == '(') {
 			st.push(ch);
-		} else if (ch == '}' || ch == ']' || ch == ')') {
+		} 
+		else if (ch == '}' || ch == ']' || ch == ')') {
 			if (st.empty()) {
 				return false;
 			}
 			if ((ch == '}' && st.top() == '{') || (ch == ']' && st.top() == '[') || (ch == ')' && st.top() == '(')) {
 				st.pop();
-			} else {
+			} 
+			else {
 				return false;
 			}
 		}
